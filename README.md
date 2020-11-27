@@ -3,7 +3,9 @@
 Consider following user and order collection in mongo db: 
 
 User Collection 
+
 userId name
+
 1 Rahul
 
 2 Ramesh
@@ -12,7 +14,9 @@ userId name
 
 
 Order Collection
+
 orderId userId subtotal date
+
 1 1 500 23 January 2019
 
 2 2 400 16 March 2019
@@ -40,7 +44,9 @@ a. Write an API which returns total no of orders placed and average bill subtota
 {userId: 3, name : “Ankita”, noOfOrders : 2, averageBillValue : 850}] 
 
 b. A new key is created in user table (noOfOrders) with default value 0, write an API  to update it, with its correct value for all users respectively. After calling your API  the new User table will be as follows: 
+
 User Id Name No. Of Orders
+
 1 Rahul 5
 
 2 Ramesh 3
