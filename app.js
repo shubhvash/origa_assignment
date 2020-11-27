@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const url = 'mongodb://localhost/AlienDBex'
+const url = 'mongodb+srv://shubhvash:mongo1234@cluster0.m3aeq.mongodb.net/node-tuts?retryWrites=true&w=majority'
 
 const app = express()
 
@@ -13,8 +13,8 @@ con.on('open', () => {
 
 app.use(express.json())
 
-const alienRouter = require('./routes/aliens')
-app.use('/aliens',alienRouter)
+const userRouter = require('./routes/users')
+app.use('/users',userRouter)
 
 app.listen(9000, () => {
     console.log('Server started')
